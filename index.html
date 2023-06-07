@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashingCakes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="css/um-icon-style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container  d-flex justify-content-between align-items-center">
+            <a href="index.html" class="d-flex align-items-center">
+                <picture>
+                    <source srcset="./images/DashingCakes-dest.png" media="(min-width: 768px)">
+                    <img class="w-100" src="./images/DashingCakes.png" alt="фото"/>
+                </picture>
+            </a>
+            <div class="menu">
+                <button  type="button" class="menu__btn-close" >
+                    <i class="icon-close"></i>
+                </button>   
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section1">Торты</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section2">Торты БЕНТО</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section3">КАПКЕЙКИ</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section4">НАБОРЫ</a></li>
+                    <li class="menu__item"><a class="menu__link btn-hover" href="#section5">ТРАЙФЛЫ</a></li>
+                </ul>
+            </div>
+            <button type="button" class="menu-burger color-green d-flex flex-column justify-content-center align-items-center">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container d-lg-flex">
+                <div class="hero__block-1">
+                    <h1 class="hero__title">Роскошный торт ручной работы</h1>
+                    <div class="hero__text-1">вкусные десерты с доставкой в <strong>Зеленограде</strong></div>
+                    <button type="button" class="hero__btn btn-hover btn-js" data-bs-toggle="modal" data-bs-target="#myModal">Выбрать торт из каталога</button>
+                    <div class="hero__img-2">
+                        <img src="./images/img2.png" alt="">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <picture>
+                        <source srcset="./images/img1-dest.png" media="(min-width: 768px)">
+                        <img class="" src="./images/img1.png" alt="фото"/>
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title d-lg-none">О кондитере</h2>
+                <div class="d-lg-flex">
+                    <div class="col-lg-6 text-center about__block-1">
+                        <picture>
+                            <source srcset="./images/img3-dest.png" media="(min-width: 768px)">
+                            <img class="about__img" src="./images/img3.png" alt="фото"/>
+                        </picture>
+                    </div>
+                    <div class="col-lg-6 about__block-2">
+                        <h2 class="about__title d-none d-lg-block">О кондитере</h2>
+                        <div class="about__citata"><span class="ql"></span> За время работы я сделала для своих клиентов сотни тортов и десертов. К каждому заказу я подхожу индивидуально и очень внимательно, так мне удаётся создавать идеально вкусные и аппетитные десерты.<span class="qr"></span></div>
+                        <ul class="about__list">
+                            <li>Имя: Елизавета</li>
+                            <li>Город: Зеленоград</li>
+                            <li>Создала 79 тортов </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about__block-3">
+                    <div class="about__block-3-text">Смотрите больше моих работ в ВК. А по промокоду ТОРТИК я дарю вам скидку 10% на первый заказ. </div>
+                    <button class="about__block-3-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ПОДРОБНЕЕ</button>
+                </div>
+                <div class="about__block-4">
+                    <div class="text-center mb-4">
+                        <div class="position-relative about__wrapper-2">
+                            <picture>
+                                <source srcset="./images/img4-dest.png" media="(min-width: 768px)">
+                                <img class="" src="./images/img4.png" alt="фото"/>
+                            </picture>
+                            <div class="about__wrapper">
+                                <ul class="about__list-2">
+                                    <li>Индивидуальный подход</li>
+                                    <li>В создании торта учитываются все ваши пожелания</li>
+                                </ul>
+                                <ul class="about__list-2">
+                                    <li>Вкуснейшие начинки</li>
+                                    <li>Оригинальные идеально сбалансированные рецепты</li>
+                                </ul>
+                                <ul class="about__list-2">
+                                    <li>Роскошное оформление</li>
+                                    <li>Стильный минималистичный дизайн, вкусно с первого взгляда </li>
+                                </ul>
+                                <ul class="about__list-2">
+                                    <li>Индивидуальный подход</li>
+                                    <li>В создании торта учитываются все ваши пожелания</li>
+                                </ul>
+                                <ul class="about__list-2">
+                                    <li>Оформление праздника</li>
+                                    <li>Один тортик или сладкий фуршет – заказ будет выполнен в лучшем виде</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cake" id="section1">
+            <div class="container">
+                <h2 class="cake__title">ТОРТЫ</h2>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake1-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake1.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake1-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake1.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake1-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake1.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="cake cake--bento" id="section2">
+            <div class="container">
+                <h2 class="cake__title" style="color: #3C2E1A;">ТОРТЫ БЕНТО</h2>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake2-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake2.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info" style="color: #000;">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money" style="color: #000;">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake2-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake2.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info" style="color: #000;">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money" style="color: #000;">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake2-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake2.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info" style="color: #000;">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money" style="color: #000;">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="cake" id="section3">
+            <div class="container">
+                <h2 class="cake__title">КАПКЕЙКИ</h2>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake3-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake3.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake3-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake3.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake3-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake3.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="cake cake--bento" id="section4">
+            <div class="container">
+                <h2 class="cake__title" style="color: #3C2E1A;">НАБОРЫ</h2>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake4-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake4.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info" style="color: #000;">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money" style="color: #000;">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake4-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake4.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info" style="color: #000;">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money" style="color: #000;">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake4-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake4.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info" style="color: #000;">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money" style="color: #000;">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="cake" id="section5">
+            <div class="container">
+                <h2 class="cake__title">ТРАЙФЛЫ</h2>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake3-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake3.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake3-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake3.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">                    
+                        <div class="cake__card">
+                            <picture>
+                                <source srcset="./images/cake3-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/cake3.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp">
+                                <div class="cake__card-info">
+                                    <div>Вес: 2кг</div>
+                                    <div>Начинка: бисквит</div>
+                                </div>
+                                <div class="cake__card-money">от 1000</div>
+                                <div class="text-center">
+                                    <button  class="cake__card-btn btn-hover"  data-bs-toggle="modal" data-bs-target="#myModal">ЗАКАЗАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="zakaz">
+            <div class="container">
+                <h2>Как сделать заказ</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 zakaz__item">
+                        <div class="zakaz__card">
+                            <h3>Определите дату и время, когда вам нужен торт</h3>
+                            <p>заказ необходимо сделать за несколько дней до желаемой даты</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 zakaz__item">
+                        <div class="zakaz__card">
+                            <h3>Выберите дизайн и внешний вид</h3>
+                            <p>опишите на словах или на картинке</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 zakaz__item">
+                        <div class="zakaz__card">
+                            <h3>Скажите, на сколько человек рассчитан торт, какой размер и вес торта</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 zakaz__item">
+                        <div class="zakaz__card">
+                            <h3>Выберите сочетание вкусов, начинку</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__block-3">
+                    <div class="about__block-3-text">Закажите ваш уникальный десерт и получите сладкий подарок!</div>
+                    <button class="about__block-3-btn btn-hover">ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="cake">
+            <div class="container">
+                <h2 class="cake__title mb-1">КОНТАКТЫ</h2>
+                <div class="cake__social">СОЦИАЛЬНЫЕ СЕТИ <a href="#" class="vk my-2 btn-hover"></a> <a href="#" class="tg my-2 btn-hover"></a></div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="cake__card" >
+                            <picture>
+                                <source srcset="./images/img5-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/img5.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp" style="background: #E5CEAD;">
+                                <p class="cake__text"> Я, как и многие мастера, которые двигаются вперёд, которым хочется развития. Очень люблю обучаться новому! Как показывает практика, это НОВОЕ в большинстве случае, кроме нас мастеров любящее свое дело, никому не нужно.... </p>
+                                <div class="">
+                                    <button style="font-weight: 400;  font-size: 16px;    line-height: 19px;    text-decoration-line: underline;    color: #3C2E1A;">ПОДРОБНЕЕ...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="cake__card" >
+                            <picture>
+                                <source srcset="./images/img6-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/img6.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp" style="background: #E5CEAD;">
+                                <p class="cake__text"> Минимализм 🤍Двухъярусный торт в бархатном покрытие велюрНачинки:-клубника со сливками-вишня в шоколадеd10/14    </p>
+                                <div class="">
+                                    <button  style="font-weight: 400;  font-size: 16px;    line-height: 19px;    text-decoration-line: underline;    color: #3C2E1A;">ПОДРОБНЕЕ...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="cake__card" >
+                            <picture>
+                                <source srcset="./images/img7-dest.png" media="(min-width: 768px)">
+                                <img class="cake__card-img" src="./images/img7.png" alt="фото"/>
+                            </picture>
+                            <div class="cake__card-wrapp" style="background: #E5CEAD;">
+                                <p class="cake__text">  Красный бархат - это торт с мягким, влажным шоколадным вкусом бисквит, и невероятно нежным кремом на основе сливочного сыра. Он отличается своим неповторимым ярко-красным цветом...</p>
+                                <div class="">
+                                    <button style="font-weight: 400;  font-size: 16px;    line-height: 19px;    text-decoration-line: underline;    color: #3C2E1A;">ПОДРОБНЕЕ...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="about__block-3-btn mt-5 btn-hover">БОЛЬШЕ ПОСТОВ В ВК</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <div id="myModal" class="modal fade z999" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content modal-fb ">
+                <div class="p-2 mw-50">
+                    <h3>ОСТАВЬТЕ ЗАЯВКУ!</h3>
+                    <p>И МЫ СВЯЖЕМСЯ С ВАМИ.</p>
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Номер телефона">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#myModal-2" >Отправить заявку</button>
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Отмена</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="btn-up btn-up_hide"></div>
+    <footer class="">
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        const btnUp = {
+          el: document.querySelector('.btn-up'),
+          show() {
+            // удалим у кнопки класс btn-up_hide
+            this.el.classList.remove('btn-up_hide');
+          },
+          hide() {
+            // добавим к кнопке класс btn-up_hide
+            this.el.classList.add('btn-up_hide');
+          },
+          addEventListener() {
+            // при прокрутке содержимого страницы
+            window.addEventListener('scroll', () => {
+              // определяем величину прокрутки
+              const scrollY = window.scrollY || document.documentElement.scrollTop;
+              // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+              scrollY > 400 ? this.show() : this.hide();
+            });
+            // при нажатии на кнопку .btn-up
+            document.querySelector('.btn-up').onclick = () => {
+              // переместим в начало страницы
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+              });
+            }
+          }
+        }
+        btnUp.addEventListener();
+      </script>
+
+</body>
+</html>

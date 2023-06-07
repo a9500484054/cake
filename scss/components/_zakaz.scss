@@ -1,0 +1,200 @@
+.zakaz {
+    background: #EBEBEB;
+    h2 {
+        margin-bottom: 20px;
+        font-family: 'Constantine';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 101.5%;
+        /* or 24px */
+        
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #3C2E1A;
+    }
+    &__item {
+        margin-bottom: 20px;
+        .zakaz__card {
+            &::before {
+                content: "";
+    
+                position: absolute;
+                top: -7px;
+                left: 4px;
+    
+                display: block;
+                width: 29px;
+                height: 24px;
+                background-image: url("./images/01.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        &:nth-child(1) {
+            .zakaz__card {
+                &::before {
+                    background-image: url("./images/01.png");
+                }
+            }
+        }
+        &:nth-child(2) {
+            .zakaz__card {
+                &::before {
+                    background-image: url("./images/02.png");
+                }
+            }
+        }
+        &:nth-child(3) {
+            .zakaz__card {
+                &::before {
+                    background-image: url("./images/03.png");
+                }
+            }
+        }
+        &:nth-child(4) {
+            .zakaz__card {
+                &::before {
+                    background-image: url("./images/04.png");
+                }
+            }
+        }
+        
+    }
+    &__card {
+        height: 108px;
+        position: relative;
+        padding: 24px 56px 24px 17px;
+        background: #E5CEAD;
+        h3 {
+            margin-bottom: 5px;
+            font-family: 'Constantine';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 101.5%;
+            /* or 14px */
+            
+            text-transform: uppercase;
+            
+            color: #3C2E1A;
+        }
+        p {
+            font-style: normal;
+            font-weight: 200;
+            font-size: 12px;
+            line-height: 15px;
+            
+            color: #3C2E1A;
+        }
+        
+
+    }
+
+}
+
+@media (min-width: $screen-table) {
+
+}
+
+
+@media (min-width: 1440px) {
+    .zakaz {
+        padding-top: 66px;
+        padding-bottom: 66px;
+        background: #EBEBEB;
+        h2 {
+            margin-bottom: 84px;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 101.5%;
+            /* identical to box height, or 65px */
+            
+            text-transform: uppercase;
+            
+            color: #3C2E1A;
+            text-align: left;
+        }
+        &__item {
+            margin-bottom: 20px;
+            .zakaz__card {
+                &::before {
+                    content: "";
+        
+                    position: absolute;
+                    top: -24px;
+                    left: 4px;
+        
+                    display: block;
+                    width: 52px;
+                    height: 44px;
+                    background-image: url("./images/01.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+            &:nth-child(1) {
+                .zakaz__card {
+                    &::before {
+                        width: 36px;
+                        height: 40px;
+                        background-image: url("./images/01d.png");
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .zakaz__card {
+                    &::before {
+                        background-image: url("./images/02d.png");
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .zakaz__card {
+                    &::before {
+                        background-image: url("./images/03d.png");
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .zakaz__card {
+                    &::before {
+                        background-image: url("./images/04d.png");
+                    }
+                }
+            }
+            
+        }
+        &__card {
+            height: 158px;
+            position: relative;
+            padding: 24px 56px 24px 17px;
+            background: #E5CEAD;
+            h3 {
+                margin-bottom: 5px;
+                font-family: 'Constantine';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 101.5%;
+                /* or 14px */
+                
+                text-transform: uppercase;
+                
+                color: #3C2E1A;
+            }
+            p {
+                font-style: normal;
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 19px;
+                
+                color: #3C2E1A;
+            }
+            
+    
+        }
+    
+    }
+}

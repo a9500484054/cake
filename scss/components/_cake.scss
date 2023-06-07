@@ -1,0 +1,186 @@
+.cake {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    &--bento {
+        background: #EBEBEB;
+    }
+    &__title {
+        font-family: 'Constantine';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 101.5%;
+        /* or 24px */
+        
+        text-transform: uppercase;
+        
+        color: #E5CEAD;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__text {
+        height: 145px;
+        margin-bottom: 34px;
+    }
+    &__social {
+        margin-top: 12px;   
+        margin-bottom: 20px;   
+        padding-right: 34px;
+        text-align: center;
+        font-family: 'Constantine';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 101.5%;
+        /* or 14px */
+
+        text-transform: uppercase;
+
+        color: #E5CEAD;
+        a {
+            position: relative;
+            &::after {
+                content: "";
+
+                position: absolute;
+
+
+                width: 16px;
+                height: 16px;
+
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        .vk::after {               
+            top: 0;
+            left: 5px;
+            background-image: url("./images/vk.png");
+        }
+        .tg::after {     
+            top: 0;
+            left: 27px;          
+            background-image: url("./images/tg.png");
+        }
+        
+    }
+    &__card {
+        max-width: 413px;
+        margin: 0 auto;
+        &-img {
+            width: 100%;
+        }
+        &-wrapp {
+            padding: 25px 20px;
+            border: 1px solid #E5CEAD;
+            border-top: none;
+        }
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 22px;
+            line-height: 27px;
+            /* identical to box height */
+
+
+            color: #E5CEAD;
+            margin-bottom: 27px;
+
+        }
+        &-money {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 101.5%;
+            /* identical to box height, or 37px */
+
+            text-transform: uppercase;
+
+            color: #E5CEAD;
+            text-align: center;
+            margin-bottom: 17px;
+        }
+        &-btn {
+            width: 269px;
+            height: 42px;
+            margin: 0 auto;
+            background: #E5CEAD;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    .cake {
+        padding-top: 56px;
+        padding-bottom: 92px;
+        &__title {
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 101.5%;
+            /* identical to box height, or 65px */
+            
+            text-transform: uppercase;
+            
+            color: #E5CEAD;
+            text-align: left    ;
+            margin-bottom: 34px;
+        }
+        &__social {
+            margin-top: 23px;   
+            margin-bottom: 40px;   
+            padding-right: 0;
+            text-align: left;
+            font-family: 'Constantine';
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 101.5%;
+            /* or 32px */
+            
+            text-transform: uppercase;
+            
+            color: #E5CEAD;
+            /* or 14px */
+    
+            text-transform: uppercase;
+    
+            color: #E5CEAD;
+            a {
+                position: relative;
+                &::after {
+                    content: "";
+    
+                    position: absolute;
+    
+    
+                    width: 34px;
+                    height: 34px;
+    
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+            .vk::after {               
+                top: 0;
+                left: 10px;
+                background-image: url("./images/vkd.png");
+            }
+            .tg::after {     
+                top: 0;
+                left: 53px;          
+                background-image: url("./images/tgd.png");
+            }
+            
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+   
+    
+}
+
